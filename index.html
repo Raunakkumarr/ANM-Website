@@ -114,6 +114,32 @@
         .dropdown-menu > li:hover > .dropdown-submenu {
             display: block;
         }
+        .orderInput{
+            padding: 6px;
+            /* width: 100%; */
+            /* height: 30px; */
+            background-color: rgba(250,250,250,0.1);
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            color: rgb(204,204,204);
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        .orderTextarea{
+            padding: 6px;
+            width: 100%;
+            background-color: rgba(250,250,250,0.1);
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            color: rgb(204,204,204);
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        .orderInput::placeholder, .orderTextarea::placeholder{
+            color: rgb(204,204,204);
+        }
     </style>
 
     <!-- Import Bootstrap -->
@@ -443,6 +469,108 @@
             </div>
             <p style="text-align: center; color: #00adef; text-align: center; font-family: 'Oswald', sans-serif; font-size: calc(1.3rem + .6vw);"> and more...</p>
         </section>
+        <section style="color:#e3f2fd; padding: 6px 10px;" id="idcards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: rgba(250,250,250,0.1);">
+                        <div class="row" style="padding: 12px;">
+                            <div style="height: 100%;" class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                <img src="./assets/img/id-card.jpg" alt="ID Card" style="border-radius: 6px; max-width: 340px; max-height: 320px;" height="100%" width="100%">
+                                <p style="margin-top: 8px;">Make a perfect piece of PVC card to display the stylish branding of your company. High quality single side print in hard plastic medium with glossy lamination.<br><br>Design Tips:<br>Resolution: 300 Dpi<br>Color Mode: CMYK<br>Supported File Format: PDF/JPG/TIFF/PSD<br>Note: Please upload front and backside file.<br>(The minimum required quantity for urgent print is 10 pcs.)</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                <p style="font-size: xx-large;"><b>ID CARD PVC GLOSSY - SINGLE SIDE</b></p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6"><p>Size</p><p>Lamination</p><p>Thickness</p><p>Weight</p><p>Quantity</p></div>
+                                        <div class="col-6"><p>54x86 mm</p><p>Glossy</p><p>1 mm</p><p>5 gram(s)</p><input type="number" name="quantity" placeholder="No. of Quantity" class="orderInput"></div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Upload your design here</label>
+                                                <input style="background-color: rgba(250,250,250,0.1); color: #fff;" class="form-control form-dark" type="file" id="formFile">
+                                            </div>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px; background-color: rgba(250,250,250,0.1); color: #fff;"></textarea>
+                                                <label for="floatingTextarea2">Any special requirement? Share it here...</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div style="margin-top: 6px;" class="input-group mb-3">
+                                                        <div class="form-floating">
+                                                            <input style="background-color: rgba(250,250,250,0.1); color: #fff;" type="text" class="form-control"
+                                                            id="floatingInputGroup1" placeholder="Username">
+                                                            <label for="floatingInputGroup1">Your Full Name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div style="margin-top: 6px;" class="input-group mb-3">
+                                                        <div class="form-floating">
+                                                            <input style="background-color: rgba(250,250,250,0.1); color: #fff;" type="number" class="form-control"
+                                                            id="floatingInputGroup1" placeholder="Username">
+                                                            <label for="floatingInputGroup1">Your Phone Number</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Home Delivery (Charges apply)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Take Away
+                                                </label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                                    style="height: 80px; background-color: rgba(250,250,250,0.1); color: #fff;"></textarea>
+                                                <label for="floatingTextarea2">Your address (Delivery Address Please)</label>
+                                            </div>
+                                            <button class="formButton" type="submit">Place Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                <table style="color: #fff;" class="table table-dark table-striped">
+                                    <thead>
+                                        <tr style="text-align: center;">
+                                            <th colspan="2">Price List</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b><i>Quantity</i></b></td>
+                                            <td><b><i>Price(/unit)</i></b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 - 50</td>
+                                            <td>Rs. 70.43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>51 - 100</td>
+                                            <td>Rs. 64.57</td>
+                                        </tr>
+                                        <tr>
+                                            <td>101 - 500</td>
+                                            <td>Rs. 58.70</td>
+                                        </tr>
+                                        <tr>
+                                            <td>500+</td>
+                                            <td>Rs. 54.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section style="color:#e3f2fd; padding: 6px 10px;" id="contact">
             <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">Contact Us</h2>
             <div class="container">
@@ -519,7 +647,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12" style="display: contents;">
+                    <div class="col-12">
                         <p style="text-align: center; margin-left: 12px; margin-right: 12px; padding: 12px; border-top: 1px solid #00adef;">Designed and developed by <a style="text-decoration: underline; color: beige;" href="https://www.raunakmishra.com.np/">Raunak Kumar</a></p>
                     </div>
                 </div>
