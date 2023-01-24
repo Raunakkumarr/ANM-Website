@@ -226,6 +226,32 @@
                 background: none;
                 font-size: large;
             }
+            #backButton{
+                border-radius: 7px;
+                background-color: #1979d6;
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                padding: 12px 12px;
+                display: inline-block;
+                outline: none;
+                box-shadow: none;
+                border: none;
+            }
+            .carousel-indicators [data-bs-target]{
+                background-color: #1979d6 !important;
+            }
+            .carousel-control-next-icon:hover{
+                background-color: #202020;
+            }
+            .carousel-control-prev-icon:hover{
+                background-color: #202020;
+            }
+            .carousel-caption{
+                color: #1979d6 !important;
+            }
         </style>
         <!-- Import Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -245,7 +271,7 @@
     </head>
     <body style="background-color: rgb(45,45,45); padding-bottom: 20px;">
         <main>
-            <header>
+            <header id="myHeader">
                 <nav style="background-color: #e3f2fd;" id="bootstrapNav" class="navbar fixed-top navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand" id="homeNav">
@@ -286,7 +312,45 @@
                     </div>
                 </nav>
             </header>
-            <section style="color:#e3f2fd; padding: 6px 10px; margin-top: 95px;" id="about">
+            <button id="backButton" type="button" class="btn" style="margin-top: 100px; margin-left: 20px;"><i class="bi bi-chevron-left"></i> Back</button>
+            <section style="height: 100%;" id="carouselSect">
+                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="50000">
+                            <img src="./assets/img/bag print.jpg" class="d-block w-100" style="height: 100%;" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Bag Print</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="50000">
+                            <img src="./assets/img/book printing.jpg" class="d-block w-100" style="height: 100%;" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Book Print</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="50000">
+                            <img src="./assets/img/brochures.png" class="d-block w-100" style="height: 100%;" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Brochures Print</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section style="color:#e3f2fd; padding: 6px 10px;" id="about">
                 <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">About Us</h2>
                 <h4 id="aboutPara" style="padding: 8px; font-family: system-ui; font-size: large; text-align: justify;">A & M Printhouse
                         is specialist in offset and digital printing. We design and prepare Quality Products with modern
@@ -2240,41 +2304,6 @@
                     </div>
                 </div>
                 <button type="button" class="slideSwapBtn" id="nextSlideBtn"><i class="bi bi-chevron-double-right"></i></button>
-                <!-- <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href=""><img src="./assets/img/client1.png" class="d-block" width="280" height="150"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href=""><img src="./assets/img/client2.png" class="d-block" width="200" height="90"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href=""><img src="./assets/img/client3.jpeg" class="d-block" width="120" height="90"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href=""><img src="./assets/img/client4.png" class="d-block" width="240" height="135"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href=""><img src="./assets/img/client5.png" class="d-block" width="120" height="100"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href=""><img src="./assets/img/client6.png" class="d-block" width="240" height="150"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href=""><img src="./assets/img/client7.png" class="d-block" width="280" height="170"></a>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div> -->
             </div>
             <footer style="color: beige;">
                 <div class="container">
@@ -2301,11 +2330,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             window.onload = function(){
+                if (document.getElementById('carouselSect').style.display != 'none') {
+                    document.getElementById('myHeader').style.display = 'none';
+                }
                 window.addEventListener('scroll', function (e) {
                     if (window.pageYOffset > 100) {
                         document.getElementById('bootstrapNav').classList.add('is-scrolling');
+                        document.getElementById('myHeader').style.display='block';
                     } else {
                         document.getElementById('bootstrapNav').classList.remove('is-scrolling');
+                        if (document.getElementById('carouselSect').style.display != 'none'){
+                            document.getElementById('myHeader').style.display='none';
+                        }
                     }
                 });
             }
@@ -2484,6 +2520,7 @@
                 $('#calendars').hide();
                 $('#flexs').hide();
                 $('.demo').coolType('SOME OF OUR HAPPY CLIENTS...');
+                $('#backButton').hide();
                 $('#changeThemetoLight').click(function(){
                     $('body').css('background-image','url("./assets/img/lightBG.jpg")');
                     $('#aboutPara').css('color','#000');
@@ -2543,6 +2580,8 @@
                     $('#services').show();
                     $('#contact').show();
                     $('#about').show();
+                    $('#backButton').hide();
+                    $('#carouselSect').show();
                 });
                 $('#aboutNav').click(function () {
                     $('#idcards').hide();
@@ -2561,6 +2600,8 @@
                     $('#services').hide();
                     $('#contact').hide();
                     $('#about').show();
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#servicesNav').click(function () {
                     $('#idcards').hide();
@@ -2579,7 +2620,8 @@
                     $('#about').hide();
                     $('#contact').hide();
                     $('#services').show();
-                    $('#services').css('margin-top','95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#contactNav').click(function () {
                     $('#idcards').hide();
@@ -2598,7 +2640,8 @@
                     $('#about').hide();
                     $('#services').hide();
                     $('#contact').show();
-                    $('#contact').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#idcarddetails').click(function () {
                     $('#about').hide();
@@ -2616,7 +2659,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#idcards').show();
-                    $('#idcards').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#lanyarddetails').click(function () {
                     $('#about').hide();
@@ -2634,7 +2678,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#lanyards').show();
-                    $('#lanyards').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#cupdetails').click(function () {
                     $('#about').hide();
@@ -2652,7 +2697,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#cups').show();
-                    $('#cups').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#cappendetails').click(function () {
                     $('#about').hide();
@@ -2670,7 +2716,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#cappens').show();
-                    $('#cappens').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#booksdetails').click(function () {
                     $('#about').hide();
@@ -2688,7 +2735,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#books').show();
-                    $('#books').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#tshirtdetails').click(function () {
                     $('#about').hide();
@@ -2706,7 +2754,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#tshirts').show();
-                    $('#tshirts').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#bagdetails').click(function () {
                     $('#about').hide();
@@ -2724,7 +2773,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#bags').show();
-                    $('#bags').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#businesscarddetails').click(function () {
                     $('#about').hide();
@@ -2742,7 +2792,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#businesscards').show();
-                    $('#businesscards').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#brochuredetails').click(function () {
                     $('#about').hide();
@@ -2760,7 +2811,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#brochures').show();
-                    $('#brochures').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#envelopesdetails').click(function () {
                     $('#about').hide();
@@ -2778,7 +2830,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#envelopes').show();
-                    $('#envelopes').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#letterheaddetails').click(function () {
                     $('#about').hide();
@@ -2796,7 +2849,8 @@
                     $('#calendars').hide();
                     $('#flexs').hide();
                     $('#letterheads').show();
-                    $('#letterheads').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#calendardetails').click(function () {
                     $('#about').hide();
@@ -2814,7 +2868,8 @@
                     $('#letterheads').hide();
                     $('#flexs').hide();
                     $('#calendars').show();
-                    $('#calendars').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
                 });
                 $('#flexdetails').click(function () {
                     $('#about').hide();
@@ -2832,7 +2887,28 @@
                     $('#letterheads').hide();
                     $('#calendars').hide();
                     $('#flexs').show();
-                    $('#flexs').css('margin-top', '95px');
+                    $('#backButton').show();
+                    $('#carouselSect').hide();
+                });
+                $('#backButton').click(function(){
+                    $('#idcards').hide();
+                    $('#lanyards').hide();
+                    $('#cups').hide();
+                    $('#cappens').hide();
+                    $('#books').hide();
+                    $('#tshirts').hide();
+                    $('#bags').hide();
+                    $('#businesscards').hide();
+                    $('#brochures').hide();
+                    $('#envelopes').hide();
+                    $('#letterheads').hide();
+                    $('#calendars').hide();
+                    $('#flexs').hide();
+                    $('#services').show();
+                    $('#contact').show();
+                    $('#about').show();
+                    $('#backButton').hide();
+                    $('#carouselSect').show();
                 });
                 $('#changeThemetoLight').click();
                 setInterval('swapImages()',7000);
