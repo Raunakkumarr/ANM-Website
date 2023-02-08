@@ -436,6 +436,25 @@
             transform: translate(-50%, -50%);
             text-align: center;
         }
+        #myBtn {
+            position: fixed; /* Fixed/sticky position */
+            bottom: 15px; /* Place the button at the bottom of the page */
+            right: 50px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #00adef; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            opacity: 60%;
+        }
+
+        #myBtn:hover {
+            opacity: 100%;
+        }
     </style>
     <!-- Import Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -3276,8 +3295,28 @@
             </div>
         </footer>
     </main>
+    <!-- Scroll TO Top -->
+    <button onclick="topFunction()" id="myBtn" style="display: none;" title="Go to top">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        mybutton = document.getElementById("myBtn");
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
         window.onload = function(){
             if (document.getElementById('carouselSect').style.display != 'none') {
                 document.getElementById('myHeader').style.display = 'none';
@@ -3295,6 +3334,7 @@
                         document.getElementsByClassName('icon-bar')[0].style.display='none';
                     }
                 }
+                scrollFunction();
             });
         }
     </script>
@@ -3524,6 +3564,7 @@
                 $('.service-card').css('background-color', '#fff');
                 $('.rememberTagline').css('color','#000');
                 $('.serviceText').css('color','#000');
+                $('#myBtn').css('color', '#fff');
             });
             $('#changeThemetoDark').click(function () {
                 $('body').css('background-image', 'none');
@@ -3548,6 +3589,7 @@
                 $('.service-card').css('background-color','rgba(255,255,255,0.1)');
                 $('.rememberTagline').css('color','#fff');
                 $('.serviceText').css('color','#fff');
+                $('#myBtn').css('color','rgb(45,45,45)');
             });
             $('#homeNav').click(function () {
                 $('#idcards').hide();
