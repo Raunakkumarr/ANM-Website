@@ -404,6 +404,38 @@
             margin-bottom: 20px !important;
         }
 
+        .container-img {
+            position: relative;
+            width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .container-img:hover .overlay {
+            height: 100%;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
     </style>
     <!-- Import Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -737,7 +769,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="card" style="border: none; background: none; cursor: pointer;" id="graphicDesignCard">
-                            <img src="./assets/img/business card.jpg" class="card-img-top" alt="...">
+                            <img style="max-height: 230px; width: auto;" src="./assets/img/business card.jpg" class="card-img-top" alt="...">
                             <div class="card-body" style="text-align: center;">
                                 <h5 style="color: #00adef;" class="card-title">Graphic Design</h5>
                                 <p class="serviceText" style="color: #000;" class="card-text">Our graphic Designing works: logo, book layout, calendar, brochure, certificates, cards and more...</p>
@@ -746,7 +778,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="card" style="border: none; background: none; cursor: pointer;" id="digitalPrintCard">
-                            <img src="./assets/img/id-card.jpg" class="card-img-top" alt="...">
+                            <img style="max-height: 230px; width: auto;" src="./assets/img/id-card.jpg" class="card-img-top" alt="...">
                             <div class="card-body" style="text-align: center;">
                                 <h5 style="color: #00adef;" class="card-title">Digital Printing</h5>
                                 <p class="serviceText" style="color: #000;" class="card-text">Easily print digital-based image directly to variety of media with us.</p>
@@ -755,7 +787,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="card" style="border: none; background: none; cursor: pointer;" id="OffsetPrintCard">
-                            <img src="./assets/img/book printing.jpg" class="card-img-top" alt="...">
+                            <img style="max-height: 230px; width: auto;" src="./assets/img/book printing.jpg" class="card-img-top" alt="...">
                             <div class="card-body" style="text-align: center;">
                                 <h5 style="color: #00adef;" class="card-title">Offset Printing</h5>
                                 <p class="serviceText" style="color: #000;" class="card-text">Print either books or documents, we make it easier.</p>
@@ -3073,11 +3105,14 @@
                     <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0"
-                                    title="YouTube video player" frameborder="0"
-                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                <div style="margin-right: 6px; margin-bottom: 6px; max-height: 440px;" class="container-img">
+                                    <img style="width: 100%; max-height: 440px;" src="./assets/img/services.jpg" alt="Services">
+                                    <div class="overlay">
+                                        <div class="text"><a href="https://www.facebook.com/photo?fbid=128065940046207&set=a.116718034514331" target="_blank"><span style="font-size: xxx-large; color: #fff;" class="material-symbols-outlined">
+                                            info
+                                        </span></a></div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/n4djDV7cifE"
@@ -3087,18 +3122,20 @@
                                     allowfullscreen></iframe>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0"
-                                    title="YouTube video player" frameborder="0"
-                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                <div style="margin-right: 6px; margin-bottom: 6px; max-height: 440px;" class="container-img">
+                                    <img style="width: 100%; max-height: 440px;" src="./assets/img/promo.jpg" alt="Services">
+                                    <div class="overlay">
+                                        <div class="text"><a href="https://www.facebook.com/photo?fbid=120305040822297&set=a.116718041180997" target="_blank"><span style="font-size: xxx-large; color: #fff;" class="material-symbols-outlined">info</span></a></div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0"
-                                    title="YouTube video player" frameborder="0"
-                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                <div style="margin-right: 6px; margin-bottom: 6px; max-height: 440px;" class="container-img">
+                                    <img style="width: 100%; max-height: 440px;" src="./assets/img/works.jpg" alt="Services">
+                                    <div class="overlay">
+                                        <div class="text"><a href="https://www.facebook.com/102975249218401/photos/a.102992509216675/118343544348238/" target="_blank"><span style="font-size: xxx-large; color: #fff;" class="material-symbols-outlined">info</span></a></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
