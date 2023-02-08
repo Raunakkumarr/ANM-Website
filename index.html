@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,6 +66,9 @@
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+            background-color: #fff;
+            filter: drop-shadow(2px 3px 4px #6c757d);
+            border-radius: 6px;
         }
 
         .service-card img {
@@ -75,19 +77,20 @@
             border-radius: 50%;
             position: relative;
             z-index: 1;
-            border: 6px solid rgb(55, 164, 242);
-            box-shadow: 0 0 20px #202020;
+            /* border: 6px solid rgb(55, 164, 242); */
+            box-shadow: 0 0 10px #202020;
             margin-bottom: 25px;
+            margin-top: 12px;
         }
 
         .shoulder {
             height: auto;
             width: 174pt;
-            background-color: rgb(50, 50, 50);
+            /* background-color: rgb(50, 50, 50); */
             margin-top: -70pt;
-            border-radius: 35pt;
+            /* border-radius: 35pt; */
             padding-top: 60pt;
-            filter: drop-shadow(2px 3px 10px rgb(34, 34, 34));
+            /* filter: drop-shadow(2px 3px 4px rgb(34, 34, 34)); */
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -222,11 +225,6 @@
             padding-bottom: 12px;
         }
 
-        .shoulderLightTheme {
-            background-color: #e9ecef;
-            filter: drop-shadow(2px 3px 10px #6c757d);
-        }
-
         .shoulderParaLightTheme {
             color: #000 !important;
         }
@@ -291,6 +289,20 @@
             background-color: #202020;
         }
 
+        .carousel-control-next-icon{
+            background-color: rgb(45,45,45) !important;
+            border-radius: 50% !important;
+            background-image: none !important;
+            position: absolute !important;
+        }
+
+        .carousel-control-prev-icon{
+            background-color: rgb(45,45,45) !important;
+            border-radius: 50% !important;
+            background-image: none !important;
+            position: absolute !important;
+        }
+
         .carousel-control-prev-icon:hover {
             background-color: #202020;
         }
@@ -300,13 +312,13 @@
         }
 
         @media screen and (max-width: 576px) {
-            #fbFrameDiv{
+            #fbFrameDiv {
                 overflow: scroll;
             }
         }
 
         @media screen and (max-width: 992px) {
-            #ytIFrame{
+            #ytIFrame {
                 height: 220px !important;
             }
         }
@@ -323,7 +335,8 @@
         }
 
         /* Style the icon bar links */
-        .icon-bar a, .non-stickySocials a {
+        .icon-bar a,
+        .non-stickySocials a {
             display: block;
             text-align: center;
             padding: 16px;
@@ -332,20 +345,21 @@
             font-size: 20px;
         }
 
-        .non-stickySocials a{
+        .non-stickySocials a {
             margin-right: 4px;
         }
 
         @media screen and (max-width: 576px) {
-            .icon-bar{
-                display: none !important;                
+            .icon-bar {
+                display: none !important;
             }
-            .non-stickySocials{
+
+            .non-stickySocials {
                 display: flex !important;
             }
         }
 
-        .non-stickySocials{
+        .non-stickySocials {
             position: relative;
             top: 0;
             -webkit-transform: none;
@@ -385,22 +399,23 @@
             background: #bb0000;
             color: white;
         }
+
+        .basicServices{
+            margin-bottom: 20px !important;
+        }
+
     </style>
     <!-- Import Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
     <!-- Import Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
     <!-- Import Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -410,7 +425,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
 <body style="background-color: rgb(45,45,45); padding-bottom: 20px; scroll-behavior: smooth;">
     <main>
         <header id="myHeader">
@@ -470,7 +484,7 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="50000">
+                    <div class="carousel-item active" data-bs-interval="4000">
                         <img src="./assets/img/bag print.jpg" class="d-block w-100" style="height: 100%;" alt="...">
                         <div class="carousel-caption d-md-block">
                             <h5>Bag Print</h5>
@@ -491,20 +505,26 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <span style="position: absolute; top: 0.2rem; left: 0.3rem;" class="material-symbols-outlined">
+                            chevron_left
+                        </span>
+                    </span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <span style="position: absolute; top: 0.2rem; left: 0.3rem;" class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
         <section style="color:#e3f2fd; padding: 6px 10px;" id="about">
-            <h2
-                style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">
-                About Us</h2>
+            <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">About Us</h2>
             <h4 id="aboutPara" style="padding: 8px; font-family: system-ui; font-size: large; text-align: justify;">A &
                 M Printhouse
                 is specialist in offset and digital printing. We design and prepare Quality Products with modern
@@ -529,7 +549,7 @@
                 </ul>
             </h4>
         </section>
-        <section style="color:#e3f2fd; padding: 6px 10px;" id="services">
+        <!-- <section style="color:#e3f2fd; padding: 6px 10px;" id="services">
             <h2
                 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">
                 Our Services</h2>
@@ -710,6 +730,196 @@
             <p
                 style="text-align: center; color: #00adef; text-align: center; font-family: 'Oswald', sans-serif; font-size: calc(1.3rem + .6vw);">
                 and more...</p>
+        </section> -->
+        <section id="services" class="reformServices" style="color:#e3f2fd; padding: 6px 10px;">
+            <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">Our Services</h2>
+            <div class="container" style="margin: 20px 0;">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card" style="border: none; background: none; cursor: pointer;" id="graphicDesignCard">
+                            <img src="./assets/img/LOGO.PNG.png" class="card-img-top" alt="...">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 style="color: #00adef;" class="card-title">Graphic Design</h5>
+                                <p class="serviceText" style="color: #000;" class="card-text">Our graphic Designing works: logo, book layout, calendar, brochure, certificates, cards and more...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card" style="border: none; background: none; cursor: pointer;" id="digitalPrintCard">
+                            <img src="./assets/img/LOGO.PNG.png" class="card-img-top" alt="...">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 style="color: #00adef;" class="card-title">Digital Printing</h5>
+                                <p class="serviceText" style="color: #000;" class="card-text">Easily print digital-based image directly to variety of media with us.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card" style="border: none; background: none; cursor: pointer;" id="OffsetPrintCard">
+                            <img src="./assets/img/LOGO.PNG.png" class="card-img-top" alt="...">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 style="color: #00adef;" class="card-title">Offset Printing</h5>
+                                <p class="serviceText" style="color: #000;" class="card-text">Print either books or documents, we make it easier.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="graphicDesignServices" class="basicServices">
+            <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">Graphic Designing Services</h2>
+            <p class="rememberTagline" style="text-align: center;font-family: 'Oswald', sans-serif; font-size: x-large;">Remember us for: <b><span id="graphicSwap" style="text-transform: uppercase; color: #00adef;"></span></b></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/id-card.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">ID Cards</p>
+                                <p class="service-details">Glossy & Matte<br>Print</p>
+                                <button type="button" id="idcarddetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/business card.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Business Cards</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="businesscarddetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/brochures.png">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Brochures</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="brochuredetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/calendar design.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Calendars</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="calendardetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/envelops.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Envelopes</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="envelopesdetails" class="btn btn-secondary btn-sm details-btn">See
+                                    Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/letter headf.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Letter Heads</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="letterheaddetails" class="btn btn-secondary btn-sm details-btn">See
+                                    Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="digitalPrintServices" class="basicServices">
+            <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">Digital Printing Services</h2>
+            <p class="rememberTagline" style="text-align: center;font-family: 'Oswald', sans-serif; font-size: x-large;">Remember us for: <b><span id="digitalSwap" style="text-transform: uppercase; color: #00adef;"></span></b></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/flex print.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Flex Print</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="flexdetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/lanyard.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Lanyards (Dori)</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Print</p>
+                                <button type="button" id="lanyarddetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/cup print.jpeg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Cup Print</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Print</p>
+                                <button type="button" id="cupdetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/pen print.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Cap and Pen Print</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Print</p>
+                                <button type="button" id="cappendetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/tshirt print.jpeg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">T-shirt Print</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Print</p>
+                                <button type="button" id="tshirtdetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/bag print.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Bag Printing</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Print</p>
+                                <button type="button" id="bagdetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="offsetPrintServices" class="basicServices">
+            <h2 style="text-align: center; color: #00adef; font-family: 'La Belle Aurore', cursive; font-weight: bolder; font-size: xxx-large; padding: 6px;">Offset Printing Services</h2>
+            <p class="rememberTagline" style="text-align: center;font-family: 'Oswald', sans-serif; font-size: x-large;">Remember us for: <b><span id="offsetSwap" style="text-transform: uppercase; color: #00adef;"></span></b></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-card">
+                            <img src="./assets/img/book printing.jpg">
+                            <div class="shoulder">
+                                <p style="margin-bottom: 3px;" class="service-name">Books</p>
+                                <p style="padding-bottom: 15pt;" class="service-details">Graphic Design & Print</p>
+                                <button type="button" id="booksdetails" class="btn btn-secondary btn-sm details-btn">See Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="serviceClass" style="color:#e3f2fd; padding: 6px 10px;" id="idcards">
             <div class="container">
@@ -2844,41 +3054,49 @@
         <section style="color: #e3f2fd; padding: 6px 10px;" id="socialsEmbed">
             <div class="container">
                 <div class="row">
-                    <div id="fbFrameDiv" style="max-width: 100%; overflow: hidden; margin-bottom: 12px;" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div id="fbFrameDiv" style="max-width: 100%; overflow: hidden; margin-bottom: 12px;"
+                        class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div id="fb-root"></div>
-                        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100085284039605" data-tabs="timeline, messages"
-                            data-width="500" data-height="880" data-small-header="true" data-adapt-container-width="true"
-                            data-hide-cover="true" data-show-facepile="true" style="width: 100%;">
-                            <blockquote cite="https://www.facebook.com/profile.php?id=100085284039605" class="fb-xfbml-parse-ignore"><a
-                                    href="https://www.facebook.com/profile.php?id=100085284039605">A&amp;M Prints House</a></blockquote>
+                        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100085284039605"
+                            data-tabs="timeline, messages" data-width="500" data-height="880" data-small-header="true"
+                            data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"
+                            style="width: 100%;">
+                            <blockquote cite="https://www.facebook.com/profile.php?id=100085284039605"
+                                class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/profile.php?id=100085284039605">A&amp;M Prints
+                                    House</a></blockquote>
                         </div>
                         <script async defer crossorigin="anonymous"
                             src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0&appId=1116663092337500&autoLogAppEvents=1"
                             nonce="mt1KYzSX"></script>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0" title="YouTube video player"
-                                    frameborder="0" style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0"
+                                    title="YouTube video player" frameborder="0"
+                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/n4djDV7cifE" title="YouTube video player"
-                                    frameborder="0" style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/n4djDV7cifE"
+                                    title="YouTube video player" frameborder="0"
+                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0" title="YouTube video player"
-                                    frameborder="0" style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0"
+                                    title="YouTube video player" frameborder="0"
+                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0" title="YouTube video player"
-                                    frameborder="0" style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmfJQQQfKm0"
+                                    title="YouTube video player" frameborder="0"
+                                    style="margin-bottom: 6px; margin-right: 6px; width: 100%;" id="ytIFrame"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
@@ -2992,19 +3210,21 @@
                     <div class="col socialLinksContainer">
                         <!-- The social media icon bar -->
                         <div class="icon-bar">
-                            <a href="https://www.facebook.com/profile.php?id=100085284039605" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100085284039605" target="_blank"
+                                class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                             <a href="mailto:anmprinthouse@gmail.com" class="google"><i class="fa fa-google"></i></a>
-                            <a href="https://www.linkedin.com/in/anm-print-house-a418a1175/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/anm-print-house-a418a1175/" target="_blank"
+                                class="linkedin"><i class="fa fa-linkedin"></i></a>
                             <!-- <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> -->
                         </div>
                         <div id="non-stickySocials" class="non-stickySocials">
-                            <a href="https://www.facebook.com/profile.php?id=100085284039605" target="_blank" class="facebook"><i
-                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100085284039605" target="_blank"
+                                class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                             <a href="mailto:anmprinthouse@gmail.com" class="google"><i class="fa fa-google"></i></a>
-                            <a href="https://www.linkedin.com/in/anm-print-house-a418a1175/" target="_blank" class="linkedin"><i
-                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/anm-print-house-a418a1175/" target="_blank"
+                                class="linkedin"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -3021,25 +3241,25 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-            window.onload = function(){
-                if (document.getElementById('carouselSect').style.display != 'none') {
-                    document.getElementById('myHeader').style.display = 'none';
-                    document.getElementsByClassName('icon-bar')[0].style.display = 'none';
-                }
-                window.addEventListener('scroll', function (e) {
-                    if (window.pageYOffset > 100) {
-                        document.getElementById('bootstrapNav').classList.add('is-scrolling');
-                        document.getElementById('myHeader').style.display='block';
-                        document.getElementsByClassName('icon-bar')[0].style.display = 'block';
-                    } else {
-                        document.getElementById('bootstrapNav').classList.remove('is-scrolling');
-                        if (document.getElementById('carouselSect').style.display != 'none'){
-                            document.getElementById('myHeader').style.display='none';
-                            document.getElementsByClassName('icon-bar')[0].style.display='none';
-                        }
-                    }
-                });
+        window.onload = function(){
+            if (document.getElementById('carouselSect').style.display != 'none') {
+                document.getElementById('myHeader').style.display = 'none';
+                document.getElementsByClassName('icon-bar')[0].style.display = 'none';
             }
+            window.addEventListener('scroll', function (e) {
+                if (window.pageYOffset > 100) {
+                    document.getElementById('bootstrapNav').classList.add('is-scrolling');
+                    document.getElementById('myHeader').style.display='block';
+                    document.getElementsByClassName('icon-bar')[0].style.display = 'block';
+                } else {
+                    document.getElementById('bootstrapNav').classList.remove('is-scrolling');
+                    if (document.getElementById('carouselSect').style.display != 'none'){
+                        document.getElementById('myHeader').style.display='none';
+                        document.getElementsByClassName('icon-bar')[0].style.display='none';
+                    }
+                }
+            });
+        }
     </script>
     <script>
         (function ($) {
@@ -3200,6 +3420,33 @@
                 $('#slideImg').attr('src', './assets/img/client6.png');
             }
         }
+        (function () {
+            var graphicwords = ["ID Cards Print", "Business Cards Print", "Brochures Print","Calendars Print","Envelopes Print","Letter Heads Print"],
+            i = 0;
+            setInterval(function () {
+                $('#graphicSwap').fadeOut(function () {
+                    $(this).html(graphicwords[(i = (i + 1) % graphicwords.length)]).fadeIn();
+                });
+            }, 3000)
+        })();
+        (function (){
+            var digitalwords = ["Flex Print", "Lanyards Print", "Cup Print", "Cap and Pen Print", "T-shirt Print", "Bag Print"],
+            i = 0;
+            setInterval(function(){
+                $('#digitalSwap').fadeOut(function () {
+                    $(this).html(digitalwords[(i = (i + 1) % digitalwords.length)]).fadeIn();
+                });
+            }, 3000)
+        })();
+        (function(){
+            var offsetwords = ["Books Print"],
+            i=0;
+            setInterval(function(){
+                $('#offsetSwap').fadeOut(function () {
+                    $(this).html(offsetwords[(i = (i + 1) % offsetwords.length)]).fadeIn();
+                });
+            }, 3000)
+        })();
         $(document).ready(function () {
             $('#idcards').hide();
             $('#lanyards').hide();
@@ -3216,6 +3463,7 @@
             $('#flexs').hide();
             $('.demo').coolType('SOME OF OUR HAPPY CLIENTS...');
             $('#backButton').hide();
+            $('.basicServices').hide();
             $('#changeThemetoLight').click(function () {
                 $('body').css('background-image', 'url("./assets/img/lightBG.jpg")');
                 $('#aboutPara').css('color', '#000');
@@ -3224,7 +3472,6 @@
                 $('.formInput').addClass('formInputLightTheme');
                 $('.formTextarea').addClass('formInputLightTheme');
                 $('#contactForm').addClass('contactFormLightTheme');
-                $('.shoulder').addClass('shoulderLightTheme');
                 $('.service-details').addClass('shoulderParaLightTheme');
                 $('.details-btn').addClass('details-btnLightTheme');
                 $('.table-striped').removeClass('table-dark');
@@ -3236,6 +3483,10 @@
                 $('.floatinglabel').addClass('floatinglabelLightTheme');
                 $('.form-check-label').addClass('form-check-label-light-theme');
                 $('.slideSwapBtn').css('color', '#000');
+                $('.service-card').css('filter','drop-shadow(2px 3px 4px #6c757d)');
+                $('.service-card').css('background-color', '#fff');
+                $('.rememberTagline').css('color','#000');
+                $('.serviceText').css('color','#000');
             });
             $('#changeThemetoDark').click(function () {
                 $('body').css('background-image', 'none');
@@ -3245,7 +3496,6 @@
                 $('.formInput').removeClass('formInputLightTheme');
                 $('.formTextarea').removeClass('formInputLightTheme');
                 $('#contactForm').removeClass('contactFormLightTheme');
-                $('.shoulder').removeClass('shoulderLightTheme');
                 $('.service-details').removeClass('shoulderParaLightTheme');
                 $('.details-btn').removeClass('details-btnLightTheme');
                 $('.table-striped').addClass('table-dark');
@@ -3257,6 +3507,10 @@
                 $('.floatinglabel').removeClass('floatinglabelLightTheme');
                 $('.form-check-label').removeClass('form-check-label-light-theme');
                 $('.slideSwapBtn').css('color', '#fff');
+                $('.service-card').css('filter','none');
+                $('.service-card').css('background-color','rgba(255,255,255,0.1)');
+                $('.rememberTagline').css('color','#fff');
+                $('.serviceText').css('color','#fff');
             });
             $('#homeNav').click(function () {
                 $('#idcards').hide();
@@ -3277,6 +3531,8 @@
                 $('#about').show();
                 $('#backButton').hide();
                 $('#carouselSect').show();
+                $('#socialsEmbed').show();
+                $('.basicServices').hide();
             });
             $('#aboutNav').click(function () {
                 $('#idcards').hide();
@@ -3297,6 +3553,7 @@
                 $('#about').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').show();
             });
             $('#servicesNav').click(function () {
                 $('#idcards').hide();
@@ -3317,6 +3574,7 @@
                 $('#services').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#contactNav').click(function () {
                 $('#idcards').hide();
@@ -3337,6 +3595,7 @@
                 $('#contact').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#idcarddetails').click(function () {
                 $('#about').hide();
@@ -3356,6 +3615,7 @@
                 $('#idcards').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#lanyarddetails').click(function () {
                 $('#about').hide();
@@ -3375,6 +3635,7 @@
                 $('#lanyards').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#cupdetails').click(function () {
                 $('#about').hide();
@@ -3394,6 +3655,7 @@
                 $('#cups').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#cappendetails').click(function () {
                 $('#about').hide();
@@ -3413,6 +3675,7 @@
                 $('#cappens').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#booksdetails').click(function () {
                 $('#about').hide();
@@ -3432,6 +3695,7 @@
                 $('#books').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#tshirtdetails').click(function () {
                 $('#about').hide();
@@ -3451,6 +3715,7 @@
                 $('#tshirts').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#bagdetails').click(function () {
                 $('#about').hide();
@@ -3470,6 +3735,7 @@
                 $('#bags').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#businesscarddetails').click(function () {
                 $('#about').hide();
@@ -3489,6 +3755,7 @@
                 $('#businesscards').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#brochuredetails').click(function () {
                 $('#about').hide();
@@ -3508,6 +3775,7 @@
                 $('#brochures').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#envelopesdetails').click(function () {
                 $('#about').hide();
@@ -3527,6 +3795,7 @@
                 $('#envelopes').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#letterheaddetails').click(function () {
                 $('#about').hide();
@@ -3546,6 +3815,7 @@
                 $('#letterheads').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#calendardetails').click(function () {
                 $('#about').hide();
@@ -3565,6 +3835,7 @@
                 $('#calendars').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#flexdetails').click(function () {
                 $('#about').hide();
@@ -3584,6 +3855,7 @@
                 $('#flexs').show();
                 $('#backButton').show();
                 $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
             });
             $('#backButton').click(function () {
                 $('#idcards').hide();
@@ -3604,6 +3876,76 @@
                 $('#about').show();
                 $('#backButton').hide();
                 $('#carouselSect').show();
+                $('#socialsEmbed').hide();
+            });
+            $('#OffsetPrintCard').click(function(){
+                $('#about').hide();
+                $('#services').hide();
+                $('#idcards').hide();
+                $('#lanyards').hide();
+                $('#cups').hide();
+                $('#cappens').hide();
+                $('#books').hide();
+                $('#tshirts').hide();
+                $('#bags').hide();
+                $('#businesscards').hide();
+                $('#brochures').hide();
+                $('#envelopes').hide();
+                $('#letterheads').hide();
+                $('#calendars').hide();
+                $('#flexs').hide();
+                $('#backButton').show();
+                $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
+                $('#digitalPrintServices').hide();
+                $('#graphicDesignServices').hide();
+                $('#offsetPrintServices').show();
+            });
+            $('#digitalPrintCard').click(function(){
+                $('#about').hide();
+                $('#services').hide();
+                $('#idcards').hide();
+                $('#lanyards').hide();
+                $('#cups').hide();
+                $('#cappens').hide();
+                $('#books').hide();
+                $('#tshirts').hide();
+                $('#bags').hide();
+                $('#businesscards').hide();
+                $('#brochures').hide();
+                $('#envelopes').hide();
+                $('#letterheads').hide();
+                $('#calendars').hide();
+                $('#flexs').hide();
+                $('#backButton').show();
+                $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
+                $('#digitalPrintServices').show();
+                $('#graphicDesignServices').hide();
+                $('#offsetPrintServices').hide();
+            });
+            $('#graphicDesignCard').click(function(){
+                $('#about').hide();
+                $('#services').hide();
+                $('#idcards').hide();
+                $('#lanyards').hide();
+                $('#cups').hide();
+                $('#cappens').hide();
+                $('#books').hide();
+                $('#tshirts').hide();
+                $('#bags').hide();
+                $('#businesscards').hide();
+                $('#brochures').hide();
+                $('#envelopes').hide();
+                $('#letterheads').hide();
+                $('#calendars').hide();
+                $('#flexs').hide();
+                $('#backButton').show();
+                $('#carouselSect').hide();
+                $('#socialsEmbed').hide();
+                $('#graphicDesignServices').show();
+                $('#digitalPrintServices').hide();
+                $('#offsetPrintServices').hide();
             });
             $('#changeThemetoLight').click();
             setInterval('swapImages()', 7000);
@@ -3616,5 +3958,4 @@
         });
     </script>
 </body>
-
 </html>
